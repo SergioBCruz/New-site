@@ -34,6 +34,12 @@ npm run build
 npm run start
 ```
 
+### Deploy estático (Netlify / Cloudflare Pages)
+- Build command: `npm run build`
+- Publish: `out`
+- Node: 18
+- Para Netlify, o arquivo `netlify.toml` já está configurado com esses valores.
+
 ### Deploy rápido
 
 - Vercel (recomendado para Next): importe o repositório, selecione framework Next.js e deploy.
