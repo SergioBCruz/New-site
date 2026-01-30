@@ -1,10 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
-  turbopack: {
-    // Define o root para evitar aviso de workspaces/lockfiles externos
-    root: __dirname,
+  output: "export", // gera /out para deploy estático (Netlify/Cloudflare)
+  images: {
+    unoptimized: true, // desativa image optimizer do Next para export estático
   },
 };
 

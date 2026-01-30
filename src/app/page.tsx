@@ -308,39 +308,6 @@ export default function Home() {
                 Falar sobre seu projeto
               </a>
               <a
-
-            <section className="space-y-4" id="pacotes-landing">
-              <p className="text-sm font-semibold uppercase tracking-wide text-muted">Criação de landing pages</p>
-              <h2 className="text-3xl font-bold text-primary">Planos oficiais</h2>
-              <p className="text-base text-muted">
-                Escolha o nível de profundidade que precisa agora e entregue rápido.
-              </p>
-              <div className="grid gap-4 md:grid-cols-3">
-                {landingPackages.map((pack) => (
-                  <div key={pack.name} className="glass h-full rounded-2xl border border-white/10 p-6 shadow-sm">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-lg font-semibold text-primary">{pack.name}</h3>
-                      <span className="text-xs font-semibold uppercase tracking-wide text-accent">Conversão</span>
-                    </div>
-                    <p className="mt-2 text-sm text-muted">{pack.price}</p>
-                    <p className="text-xs text-muted">{pack.delivery}</p>
-                    <ul className="mt-4 space-y-2 text-sm text-muted">
-                      {pack.items.map((item) => (
-                        <li key={item}>• {item}</li>
-                      ))}
-                    </ul>
-                    <a
-                      className="mt-5 inline-flex justify-center rounded-full border border-white/25 px-4 py-3 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-white/50 hover:shadow-lg"
-                      href={whatsappLink}
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Quero essa landing
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </section>
                 className="rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-white/50 hover:shadow-lg"
                 href={whatsappLink}
                 target="_blank"
@@ -348,6 +315,39 @@ export default function Home() {
               >
                 WhatsApp imediato
               </a>
+            </div>
+          </section>
+
+          <section className="space-y-4" id="pacotes-landing">
+            <p className="text-sm font-semibold uppercase tracking-wide text-muted">Criação de landing pages</p>
+            <h2 className="text-3xl font-bold text-primary">Planos oficiais</h2>
+            <p className="text-base text-muted">
+              Escolha o nível de profundidade que precisa agora e entregue rápido.
+            </p>
+            <div className="grid gap-4 md:grid-cols-3">
+              {landingPackages.map((pack) => (
+                <div key={pack.name} className="glass h-full rounded-2xl border border-white/10 p-6 shadow-sm">
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-semibold text-primary">{pack.name}</h3>
+                    <span className="text-xs font-semibold uppercase tracking-wide text-accent">Conversão</span>
+                  </div>
+                  <p className="mt-2 text-sm text-muted">{pack.price}</p>
+                  <p className="text-xs text-muted">{pack.delivery}</p>
+                  <ul className="mt-4 space-y-2 text-sm text-muted">
+                    {pack.items.map((item) => (
+                      <li key={item}>• {item}</li>
+                    ))}
+                  </ul>
+                  <a
+                    className="mt-5 inline-flex justify-center rounded-full border border-white/25 px-4 py-3 text-sm font-semibold text-primary transition hover:-translate-y-0.5 hover:border-white/50 hover:shadow-lg"
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    Quero essa landing
+                  </a>
+                </div>
+              ))}
             </div>
           </section>
 
