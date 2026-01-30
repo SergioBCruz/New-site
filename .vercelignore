@@ -1,0 +1,3 @@
+# Ignore sibling projects not part of this deploy
+site-html
+vite-landing
